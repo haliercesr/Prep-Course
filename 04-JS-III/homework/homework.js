@@ -163,6 +163,16 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  array1=[]
+  for (i=0;i<array.length;i++){
+    if(array[i]==="Enero" || array[i]==="Marzo" || array[i]==="Noviembre" ){
+      array1.push(array[i])
+    }
+  }
+if (array1.length===3){
+  return array1;
+} else {return "No se encontraron los meses pedidos";
+}
 }
 
 
@@ -170,6 +180,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  mayoresa200=[]
+  for (i=0;i<array.length;i++){
+    if (array[i]>100){
+      mayoresa200.push(array[i])
+    }
+  }
+  return mayoresa200
 }
 
 
